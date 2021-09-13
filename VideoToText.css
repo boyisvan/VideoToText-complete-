@@ -1,0 +1,169 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+}
+#container{
+    width: 20%;
+    margin: 10px;
+    border: 2px solid white;
+    box-shadow: 5px 5px 10px #999;
+}
+
+#state0{
+    width: 100%;
+}
+.nav{
+    width: 80%;
+    margin: 5px auto;
+    position: relative;
+    box-shadow: 3px 3px 7px #999;
+}
+.nav input{
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 100%;
+}
+#p1{
+    text-align: center;
+    font-family: 'poppin',sans-serif;
+    font-size: 15px;
+    color: #999;
+}
+#video1{
+    width: 100%;
+    display: none;
+}
+#video1 video{
+    display: block;
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+}
+.btn{
+    width: 20%;
+    margin: 10px auto;
+}
+/* phần bắt đầu xem video */
+.btn button{
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    border-radius: 5px;
+    padding: 4px;
+    border: none;
+    background: rgb(123, 123, 243);
+}
+.btn button:hover{
+    transform: scale(1.05,1.05);
+    background: #FFCCCC;
+    color: black;
+}
+#container1{
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+/* phần chứa code kí tự */
+#stage { 
+    display: none; 
+    background: white;
+    margin-left: 30px;
+    position: absolute;  
+    top: 0;  
+    left: 30%;  
+    right: 0;   
+    font-family: Courier New;  
+    font-size: 14px;  
+    line-height: 8px;
+}
+
+/* reponsive samsung s10 ,iphone 5/5se, iphone X ,... */
+@media (min-width:300px) and (max-width:400px) {
+    body{
+        position: relative;
+    }
+    #container{
+        width: 65%;
+        margin: 1rem auto;
+    }   
+    #stage {
+        width: 100%;
+        display: none; 
+        background: whie;
+        position: absolute;     
+        font-family: Courier New;
+        top: 106%;
+        left: 0;
+        font-size: 6.9px;  
+        line-height:4.1px;
+    }
+}
+/* reponsive iphone 6/7/8 plus  */
+@media (min-width:401px) and (max-width:500px) {
+    body{
+        position: relative;
+    }
+    #container{
+        width: 65%;
+        margin: 1rem auto;
+    }   
+    #stage {
+        width: 100%;
+        display: none; 
+        background: whie;
+        position: absolute;     
+        font-family: Courier New;
+        top: 106%;
+        left: 0;
+        font-size: 7px;  
+        line-height: 4px;
+    }
+}
+/* reponsive surfaceto ,galaxy fold */
+@media (min-width:501px) and (max-width:700px) {
+    body{
+        position: relative;
+    }
+    #container{
+        width: 57%;
+        margin: 1rem auto;
+    }   
+    #stage {
+        width: 100%;
+        display: none; 
+        background: whie;
+        position: absolute;     
+        font-family: Courier New;
+        top: 106%;
+        left: 0;
+        font-size: 7.5px;  
+        line-height: 4.5px;
+    }
+}
+/* reponsive ipad ,ipad pro */
+@media (min-width:768px) and (max-width:1024px) {
+    body{
+        position: relative;
+    }
+    #container{
+        width: 40%;
+        margin: 1rem auto;
+    }   
+    #stage {
+        width: 100%;
+        display: none; 
+        background: whie;
+        position: absolute;     
+        font-family: Courier New;
+        top: 106%;
+        left: 0;
+        font-size: 12px;  
+        line-height: 6.6px;
+    }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(Văn) Video To Text</title>
+    <link rel="stylesheet" href="VideoToText.css">
+</head>
+<body>
+    <div class="box">
+        <div id="container">
+            <div id="state0">
+                <div class="nav">
+                    <input class="input" name="chonfile" type="file"  id="file" >
+                </div>
+                <p id="p1"> 😉 <span></span></p>
+                <div id="video1" class="button1">
+                    <video  controls loop></video>
+                </div>
+                <div class="btn">
+                    <button id="play"  type="button" onclick="play()">xem</button>
+                </div>
+            </div>
+        </div>
+        <div id="stage"></div>
+    </div>
+    <script src="VideoToText.js"></script>
+</body>
+</html>
